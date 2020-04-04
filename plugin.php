@@ -40,7 +40,7 @@ function redirindex_admin_display( $message = false, $message_type = false ) {
 	} else {
 		$message = '';
 	}
-	
+
 	// Echo the page content
 	?>
 		<h2><?php yourls_e( 'Redirect Index', 'redirindex' ); ?></h2>
@@ -51,7 +51,7 @@ function redirindex_admin_display( $message = false, $message_type = false ) {
 			<input type="hidden" name="action" value="redirindex" />
 			<input type="hidden" name="nonce" value="<?php echo $nonce; ?>" />
 
-			<p><input type="url" name="redir_url" value="<?php echo $current_url; ?>" class="text" /></p>
+			<p><input type="url" name="redir_url" value="<?php echo $current_url; ?>" class="text" size="30" /></p>
 			<p><input type="submit" value="<?php echo yourls_e( 'Save', 'redirindex' ); ?>" class="button primary" /></p>
 		</form>
 
